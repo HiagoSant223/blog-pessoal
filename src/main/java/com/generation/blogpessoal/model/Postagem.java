@@ -25,7 +25,7 @@ public class Postagem {
 	private String titulo;
 	
 	@NotBlank(message="O atributo Texto é Obrigatório")
-	@Size(min = 100, max = 1000, message = "Tamanho minimo: 100, maximo: 1000")
+	@Size(min = 5, max = 1000, message = "Tamanho minimo: 100, maximo: 1000")
 	private String texto;
 	
 	@UpdateTimestamp
@@ -62,6 +62,6 @@ public class Postagem {
 	public void setData(LocalDateTime data) {
 		this.data = data;
 	}
-	
+
 	
 }
